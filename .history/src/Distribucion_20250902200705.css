@@ -1,4 +1,4 @@
-/* CONTENEDOR GENERAL */
+/* --- CONTENEDOR GENERAL --- */
 .distribucion-container {
   font-family: "Segoe UI", sans-serif;
   background: #fafafa;
@@ -6,7 +6,7 @@
   border-radius: 10px;
 }
 
-/* ENCABEZADO DE ACCIONES */
+/* --- ENCABEZADO DE ACCIONES --- */
 .acciones-header {
   display: flex;
   justify-content: space-between;
@@ -66,13 +66,13 @@
   box-shadow: 0px 4px 8px rgba(106, 168, 79, 0.3);
 }
 
-/* DISTRIBUCIÓN EN DOS COLUMNAS */
+/* --- DISTRIBUCIÓN EN DOS COLUMNAS --- */
 .contenido {
   display: flex;
   gap: 20px;
 }
 
-/* COLUMNA IZQUIERDA (INVITADOS) */
+/* --- COLUMNA IZQUIERDA (INVITADOS) --- */
 .columna.invitados {
   width: 30%;
   background: white;
@@ -112,7 +112,7 @@
   color: #777;
 }
 
-/* DERECHA (PLANO)  */
+/* COLUMNA DERECH */
 .columna.salon {
   width: 70%;
   background: white;
@@ -200,7 +200,7 @@
   bottom: 40px;
 }
 
-/* MESAS */
+/* --- MESAS --- */
 .mesa {
   position: absolute;
   width: 80px;
@@ -235,7 +235,7 @@
   font-size: 11px;
 }
 
-/* MESA PRINCIPAL */
+/* --- MESA PRINCIPAL --- */
 .mesa-principal {
   position: absolute;
   top: 200px;
@@ -250,7 +250,7 @@
   font-weight: bold;
 }
 
-/* RESUMEN */
+/* --- RESUMEN --- */
 .resumen {
   font-size: 13px;
   text-align: center;

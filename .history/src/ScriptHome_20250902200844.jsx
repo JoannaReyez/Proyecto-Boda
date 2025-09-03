@@ -269,4 +269,4 @@ export function useInvitadosConfig() {
   };
 }
 
-/*Aqui iniciara la configuración del aparado de Distribucion de mesas*/
+/**/ */
