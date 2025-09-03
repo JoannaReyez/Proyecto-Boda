@@ -1,0 +1,199 @@
+/* ------------------- CONTENEDOR GENERAL ------------------- */
+.distribucion-container {
+  font-family: "Arial", sans-serif;
+  background: #fff;
+  padding: 20px;
+  color: #333;
+}
+
+/* ------------------- TOOLBAR SUPERIOR ------------------- */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.toolbar-left {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: #e6e6f5;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d4d4f0;
+}
+
+.btn-guardar {
+  background: #88a574;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-guardar:hover {
+  background: #72905e;
+}
+
+/* ------------------- LAYOUT PRINCIPAL ------------------- */
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 20px;
+}
+
+/* ------------------- INVITADOS ------------------- */
+.invitados {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fafafa;
+}
+
+.invitados h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.invitados ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invitados li {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #fff;
+  cursor: grab;
+}
+
+.arrastre {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* ------------------- SALON ------------------- */
+.salon h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.plano {
+  position: relative;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  background: #fff;
+  height: 600px;
+  padding: 20px;
+}
+
+/* Mesas redondas */
+.mesa {
+  width: 90px;
+  height: 90px;
+  border: 2px dashed #bbb;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #fdfdfd;
+  font-size: 12px;
+}
+
+.mesa p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.mesa span {
+  font-size: 11px;
+  color: #777;
+}
+
+/* ------------------- ELEMENTOS FIJOS ------------------- */
+.mesa-principal {
+  position: absolute;
+  top: 40px;
+  left: 40%;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 13px;
+  background: #fefefe;
+}
+
+.pista {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  width: 160px;
+  height: 160px;
+  border: 2px dashed #f3a866;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #d68a33;
+}
+
+.escenario, .barra, .buffet {
+  position: absolute;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 12px;
+  background: #fefefe;
+  text-align: center;
+}
+
+.escenario {
+  top: 140px;
+  right: 40px;
+  width: 120px;
+}
+
+.barra {
+  bottom: 60px;
+  left: 40px;
+  width: 80px;
+}
+
+.buffet {
+  bottom: 60px;
+  right: 40px;
+  width: 80px;
+}
+
+/* ------------------- RESUMEN ------------------- */
+.resumen {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #444;
+}
+
+.resumen strong {
+  color: #000;
+}
+
+.porcentaje {
+  color: orange;
+  font-weight: bold;
+}

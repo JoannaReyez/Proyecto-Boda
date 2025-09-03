@@ -1,0 +1,306 @@
+.distribucion-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 15px;
+  background: #fafafa;
+}
+
+/* 🔹 Encabezado de acciones */
+.distribucion-container .acciones-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.distribucion-container .acciones-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.distribucion-container .btn-morado {
+  background: linear-gradient(135deg, #7b3ff3, #9d6df7);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.distribucion-container .btn-morado:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(123, 63, 243, 0.4);
+}
+
+.distribucion-container .btn-gris {
+  background: #f0f0f0;
+  color: #444;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+.distribucion-container .btn-gris:hover {
+  background: #e0e0e0;
+}
+
+.distribucion-container .btn-verde {
+  background: linear-gradient(135deg, #6bbf59, #88c057);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.distribucion-container .btn-verde:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(136, 192, 87, 0.4);
+}
+
+/* 🔹 Contenido principal */
+.distribucion-container .contenido {
+  display: flex;
+  gap: 20px;
+}
+
+/* Columna izquierda (lista de invitados) */
+.distribucion-container .columna.invitados {
+  width: 25%;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+.distribucion-container .lista-invitados {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.distribucion-container .lista-invitados li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.distribucion-container .nota {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Columna derecha (salón) */
+.distribucion-container .columna.salon {
+  width: 75%;
+}
+
+/* 🔹 Wrapper para scroll */
+.distribucion-container .plano-wrapper {
+  width: 100%;
+  overflow: auto; /* scroll horizontal y vertical */
+}
+
+.distribucion-container .plano {
+  position: relative;
+  height: 500px;
+  min-width: 800px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.08);
+}
+
+/* 🔹 Elementos dentro del plano */
+.distribucion-container .entrada,
+.distribucion-container .barra,
+.distribucion-container .pista,
+.distribucion-container .escenario,
+.distribucion-container .buffet {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  border: 1px dashed #aaa;
+  border-radius: 6px;
+  padding: 5px 8px;
+  background: #fdfdfd;
+}
+
+.distribucion-container .entrada {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.distribucion-container .barra {
+  bottom: 20px;
+  left: 10px;
+}
+
+.distribucion-container .pista {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: radial-gradient(circle at center, #fefefe, #f3f3f3);
+}
+
+.distribucion-container .escenario {
+  top: 40%;
+  right: 10px;
+}
+
+.distribucion-container .buffet {
+  bottom: 20px;
+  right: 10px;
+}
+
+/* 🔹 Mesas */
+.distribucion-container .mesa {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #f9f9f9;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+.distribucion-container .mesa:hover {
+  transform: scale(1.05);
+}
+
+.distribucion-container .mesa.ocupada {
+  background: #d8f6d3;
+  border-color: #6bbf59;
+}
+
+.distribucion-container .mesa-nombre {
+  font-weight: bold;
+}
+
+.distribucion-container .mesa-info {
+  font-size: 11px;
+  color: #555;
+}
+
+.distribucion-container .mesa-principal {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px;
+  border: 2px solid #aaa;
+  border-radius: 12px;
+  background: #f5f5f5;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* 🔹 Resumen */
+.distribucion-container .resumen {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.distribucion-container .porcentaje {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 1000px) {
+  .distribucion-container .contenido {
+    flex-direction: column;
+  }
+
+  .distribucion-container .columna.invitados,
+  .distribucion-container .columna.salon {
+    width: 100%;
+  }
+
+  .distribucion-container .plano {
+    min-width: 600px;
+    min-height: 400px;
+  }
+
+  .distribucion-container .mesa {
+    width: 60px;
+    height: 60px;
+    font-size: 11px;
+    padding-top: 8px;
+  }
+
+  .distribucion-container .mesa-principal {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .distribucion-container .acciones-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .distribucion-container .acciones-botones {
+    justify-content: center;
+  }
+
+  .distribucion-container .btn-morado,
+  .distribucion-container .btn-gris,
+  .distribucion-container .btn-verde {
+    width: 100%;
+    text-align: center;
+  }
+
+  .distribucion-container .resumen {
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+/* 📱 EXTRA PEQUEÑOS */
+@media (max-width: 480px) {
+  .distribucion-container {
+    padding: 10px;
+  }
+
+  .distribucion-container .plano {
+    min-width: 500px;
+    min-height: 350px;
+  }
+
+  .distribucion-container .mesa {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+    padding-top: 6px;
+  }
+
+  .distribucion-container .pista {
+    width: 120px;
+    height: 120px;
+    font-size: 11px;
+  }
+
+  .distribucion-container .mesa-principal {
+    font-size: 11px;
+    padding: 6px;
+  }
+}

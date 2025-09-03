@@ -1,0 +1,39 @@
+.masterpage {
+  font-family: "Segoe UI", sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #f3f3f3;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background: #e6e6e6;
+}
+
+/* Cuando está activa la sección */
+.nav-item.active {
+  background: #c85a17; /* anaranjado fuerte */
+  color: white;
+}

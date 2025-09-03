@@ -1,0 +1,94 @@
+.calendario-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.calendario-header h2 {
+  color: #3a8b3a;
+  margin: 0;
+}
+
+.calendario-header p {
+  color: #888;
+  margin: 4px 0 20px;
+}
+
+.calendario-contenido {
+  display: flex;
+  gap: 40px;
+}
+
+.timeline {
+  flex: 2;
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-item .circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ccc;
+  position: absolute;
+  left: -30px;
+  top: 4px;
+}
+
+.timeline-item.completado .circle {
+  background: green;
+}
+.timeline-item.en-progreso .circle {
+  background: orange;
+}
+.timeline-item.pendiente .circle {
+  background: #ddd;
+}
+
+.timeline-item .line {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background: #ddd;
+  left: -22px;
+  top: 20px;
+}
+
+.tarea-info {
+  margin-left: 10px;
+}
+
+.progreso-general {
+  flex: 1;
+  text-align: center;
+}
+
+.circular-chart {
+  max-width: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke: green;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+.percentage {
+  font-size: 0.5em;
+  text-anchor: middle;
+  fill: #333;
+}

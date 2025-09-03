@@ -1,0 +1,64 @@
+.masterpage {
+  font-family: "Segoe UI", sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: white; /* siempre texto blanco */
+}
+
+/* Inicio */
+.nav-item.inicio {
+  background: #ffcc80; /* naranja claro */
+}
+.nav-item.inicio.active {
+  background: #ff9800; /* naranja fuerte */
+}
+
+/* Componente */
+.nav-item.componente {
+  background: #a5d6a7; /* verde claro */
+}
+.nav-item.componente.active {
+  background: #4caf50; /* verde fuerte */
+}
+
+/* Tareas */
+.nav-item.tareas {
+  background: #90caf9; /* azul claro */
+}
+.nav-item.tareas.active {
+  background: #2196f3; /* azul fuerte */
+}
+
+/* Invitados */
+.nav-item.invitados {
+  background: #ce93d8; /* morado claro */
+}
+.nav-item.invitados.active {
+  background: #9c27b0; /* morado fuerte */
+}
+
+.nav-item:hover {
+  filter: brightness(0.9);
+}

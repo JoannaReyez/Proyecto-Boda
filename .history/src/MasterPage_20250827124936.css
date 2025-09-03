@@ -1,0 +1,33 @@
+.master-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  background: #0055aa;
+  padding: 0.5rem;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.footer {
+  background: #ddd;
+  padding: 1rem;
+  text-align: center;
+}

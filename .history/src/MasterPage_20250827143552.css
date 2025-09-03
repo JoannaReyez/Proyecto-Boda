@@ -1,0 +1,54 @@
+.masterpage {
+  font-family: "Segoe UI", sans-serif;
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  background: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-item {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #f3f3f3;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background: #e6e6e6;
+}
+
+/* Colores activos por sección */
+.nav-item.inicio.active {
+  background: #ff9800; /* naranja */
+  color: white;
+}
+
+.nav-item.componente.active {
+  background: #4caf50; /* verde */
+  color: white;
+}
+
+.nav-item.tareas.active {
+  background: #2196f3; /* azul */
+  color: white;
+}
+
+.nav-item.invitados.active {
+  background: #9c27b0; /* morado */
+  color: white;
+}

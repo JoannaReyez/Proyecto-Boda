@@ -1,0 +1,149 @@
+.distribucion-container {
+  font-family: Arial, sans-serif;
+  padding: 15px;
+}
+
+.distribucion-container .acciones-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.acciones-botones {
+  display: flex;
+  gap: 10px;
+}
+
+.distribucion-container .btn-morado {
+  background: #7b3ff3;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-gris {
+  background: #e4e4e4;
+  color: #555;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-verde {
+  background: #88c057;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.distribucion-container .contenido {
+  display: flex;
+  gap: 20px;
+}
+
+/* Columna izquierda */
+.columna.invitados {
+  width: 25%;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.lista-invitados {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-invitados li {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.nota {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Columna derecha */
+.columna.salon {
+  width: 75%;
+}
+
+.plano {
+  position: relative;
+  height: 500px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.entrada, .barra, .pista, .escenario, .buffet {
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+  border: 1px dashed #aaa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.entrada { left: 10px; top: 50%; transform: translateY(-50%); }
+.barra { bottom: 20px; left: 10px; }
+.pista { top: 40%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; }
+.escenario { top: 40%; right: 10px; }
+.buffet { bottom: 20px; right: 10px; }
+
+.mesa {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.mesa.ocupada {
+  background: #d8f6d3;
+  border-color: #88c057;
+}
+
+.mesa-nombre {
+  font-weight: bold;
+}
+
+.mesa-info {
+  font-size: 11px;
+  color: #555;
+}
+
+.mesa-principal {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  background: #f5f5f5;
+  text-align: center;
+  font-size: 12px;
+}
+
+.resumen {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.porcentaje {
+  color: orange;
+  font-weight: bold;
+}

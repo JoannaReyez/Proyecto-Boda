@@ -1,0 +1,137 @@
+.distribucion-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ddd;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-guardar {
+  background: #7cb342;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  gap: 20px;
+}
+
+.invitados {
+  width: 250px;
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.invitados h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.invitados ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invitados li {
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: grab;
+}
+
+.arrastre {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.salon {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.plano {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.mesa {
+  border: 2px dashed #bbb;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.mesa span {
+  font-weight: bold;
+}
+
+.mesa-principal {
+  grid-column: span 2;
+  text-align: center;
+  border: 2px solid #444;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.pista {
+  grid-column: span 2;
+  border: 2px dashed orange;
+  padding: 30px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+
+.escenario, .barra, .buffet {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.resumen {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.resumen .porcentaje {
+  color: orange;
+  font-weight: bold;
+}
