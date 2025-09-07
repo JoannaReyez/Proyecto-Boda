@@ -1,9 +1,9 @@
 import React from "react";
-import "./Calendario.css";
-import { useCalendarioConfig } from "./ScriptHome";
+import "../styles/pages/Calendario.css";
+import useCalendario from "../hooks/useCalendario";
 
 export default function Calendario() {
-  const { tab, setTab, tareas, completadas, total, progreso } = useCalendarioConfig();
+  const { tab, setTab, tareas, completadas, total, progreso } = useCalendario();
 
   return (
     <div className="calendario-container">

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Distribucion.css";
+import "../styles/pages/Distribucion.css";
 
 export default function Distribucion() {
   return (

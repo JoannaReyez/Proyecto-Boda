@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Mesas.css";
+import "../styles/pages/Mesas.css";
 
 export default function Mesas() {
   const [invitados] = useState([

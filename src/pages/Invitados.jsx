@@ -1,6 +1,6 @@
 import React from "react";
-import "./Invitados.css";
-import { useInvitadosConfig } from "./ScriptHome";
+import "../styles/pages/Invitados.css";
+import useInvitados from "../hooks/useInvitados";
 
 export default function Invitados() {
   const {
@@ -14,7 +14,7 @@ export default function Invitados() {
     nuevoInvitado, setNuevoInvitado,
     handleGuardar,
     totalConfirmados, totalPendientes, totalRechazados, totalInvitados,
-  } = useInvitadosConfig();
+  } = useInvitados();
 
   return (
     <div className="invitados-wrapper">

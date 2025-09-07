@@ -1,6 +1,6 @@
 import React from "react";
-import "./Catalogo.css";
-import useScriptHome from "./ScriptHome";
+import "../styles/pages/Catalogo.css";
+import useCatalogo from "../hooks/useCatalogo";
 
 export default function Catalogo() {
   const {
@@ -10,7 +10,7 @@ export default function Catalogo() {
     setModalItem,
     toggleFavorito,
     itemsFiltrados,
-  } = useScriptHome();
+  } = useCatalogo();
 
   return (
     <div className="catalogo-container">

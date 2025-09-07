@@ -1,6 +1,6 @@
-import "./Home.css";
-import MasterPage from "./MasterPage";
-import { CircleChart } from "./ScriptHome";
+import "../styles/pages/Home.css";
+import MasterPage from "../components/layout/MasterPage";
+import { CircleChart } from "../components/ui/CircleChart";
 import { Outlet } from "react-router-dom";
 
 

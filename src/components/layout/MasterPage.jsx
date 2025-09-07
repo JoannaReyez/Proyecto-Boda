@@ -1,6 +1,6 @@
-// src/MasterPage.jsx
+// src/components/layout/MasterPage.jsx
 import { NavLink } from "react-router-dom"
-import "./MasterPage.css"
+import "../../styles/components/MasterPage.css"
 
 export default function MasterPage({ children }) {
   return (
@@ -14,7 +14,7 @@ export default function MasterPage({ children }) {
           <NavLink to="/Calendario" className={({ isActive }) => "nav-item calendario" + (isActive ? " active" : "") 
           } > Calendario y Tareas </NavLink>
           
-          <NavLink to="/finanzas" className={({ isActive }) => "nav-item finanzas" + (isActive ? " active" : "")
+          <NavLink to="/Finanzas" className={({ isActive }) => "nav-item finanzas" + (isActive ? " active" : "")
             } > Gestión Financiera </NavLink>
           
           <NavLink to="/Invitados" className={({ isActive }) => "nav-item invitados" + (isActive ? " active" : "")

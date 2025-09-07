@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Componente.css"; // En esta parte ahora se importan los estilos
+import "../styles/pages/Finanzas.css"; // En esta parte ahora se importan los estilos
 
-export default function Componente() {
+export default function Finanzas() {
   const [text, setText] = useState("");
   const [updated, setUpdated] = useState("");
 
