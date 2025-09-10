@@ -157,7 +157,7 @@ export default function Dashboard() {
             <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Comunicación</button></div>
           </div>
           <div className="dashboard-fila">
-            <div className="col-tipo"><span className="icon conflicto">⚠</span> Conflicto de asignación</div>
+            <div className="col-tipo"><span className="icon conflicto">🔄</span> Conflicto de asignación</div>
             <div className="col-desc">Nuevo conflicto de asignación de asientos</div>
             <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Asignaciones</button></div>
           </div>
