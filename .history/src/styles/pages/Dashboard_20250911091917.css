@@ -9,7 +9,7 @@
 
 .circle-wrapper {
   position: relative;
-  width: 120px; 
+  width: 120px; /* ajusta según tu diseño */
   height: 120px;
 }
 
@@ -32,6 +32,9 @@
   color: gray;
   margin-top: 2px;
 }
+
+
+/* Forzamos que el texto se centre dentro del círculo */
 .metric-text {
   position: absolute;
   top: 50%;

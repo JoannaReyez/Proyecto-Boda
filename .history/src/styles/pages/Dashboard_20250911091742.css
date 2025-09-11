@@ -9,7 +9,7 @@
 
 .circle-wrapper {
   position: relative;
-  width: 120px; 
+  width: 120px; /* ajusta según tu diseño */
   height: 120px;
 }
 
@@ -32,13 +32,16 @@
   color: gray;
   margin-top: 2px;
 }
+
+
+/* Forzamos que el texto se centre dentro del círculo */
 .metric-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  pointer-events: none;
+  pointer-events: none; /* evita que tape clicks */
 }
 
 .metric-text strong {
@@ -61,7 +64,7 @@
   background: white;
   border-radius: 14px;
   padding: 20px;
-  box-shadow: 0 2px 6px #00000014;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   margin-bottom: 30px;
 }
 
@@ -170,10 +173,10 @@
 
 /* CALENDARIO */
 .dashboard-calendario {
-  background: #ffffff;
+  background: white;
   border-radius: 14px;
   padding: 15px;
-  box-shadow: 0 2px 6px #00000014;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .dashboard-calendario-header {
@@ -224,7 +227,7 @@
 
 .dashboard-dia.hoy {
   background: #3498db;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   border-radius: 50%;
 }
@@ -235,7 +238,7 @@
 
 /* ACCIONES */
 .dashboard-acciones {
-  background: #ffffff;
+  background: white;
   border-radius: 14px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -297,7 +300,7 @@
   border-radius: 10px;
   font-size: 12px;
   margin-bottom: 8px;
-  background: #f9fcff;
+  background: #f9fcff; /* blanco con un toque azul */
   border: 1px solid #e1ecf9;
 }
 
@@ -322,7 +325,7 @@
 }
 
 .icon-circle.alerta {
-  background: #f4b400; 
+  background: #f4b400; /* Amarillo */
 }
 
 .icon-circle.chat {

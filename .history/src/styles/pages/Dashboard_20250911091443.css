@@ -9,7 +9,7 @@
 
 .circle-wrapper {
   position: relative;
-  width: 120px; 
+  width: 120px; /* ajusta según tu diseño */
   height: 120px;
 }
 
@@ -32,13 +32,16 @@
   color: gray;
   margin-top: 2px;
 }
+
+
+/* Forzamos que el texto se centre dentro del círculo */
 .metric-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  pointer-events: none;
+  pointer-events: none; /* evita que tape clicks */
 }
 
 .metric-text strong {
@@ -61,7 +64,7 @@
   background: white;
   border-radius: 14px;
   padding: 20px;
-  box-shadow: 0 2px 6px #00000014;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   margin-bottom: 30px;
 }
 
@@ -170,10 +173,10 @@
 
 /* CALENDARIO */
 .dashboard-calendario {
-  background: #ffffff;
+  background: white;
   border-radius: 14px;
   padding: 15px;
-  box-shadow: 0 2px 6px #00000014;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .dashboard-calendario-header {
@@ -224,7 +227,7 @@
 
 .dashboard-dia.hoy {
   background: #3498db;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   border-radius: 50%;
 }
@@ -235,7 +238,7 @@
 
 /* ACCIONES */
 .dashboard-acciones {
-  background: #ffffff;
+  background: white;
   border-radius: 14px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -297,7 +300,7 @@
   border-radius: 10px;
   font-size: 12px;
   margin-bottom: 8px;
-  background: #f9fcff;
+  background: #f9fcff; /* blanco con un toque azul */
   border: 1px solid #e1ecf9;
 }
 
@@ -322,15 +325,15 @@
 }
 
 .icon-circle.alerta {
-  background: #f4b400; 
+  background: #f4b400; /* Amarillo */
 }
 
 .icon-circle.chat {
-  background: #e91e63; 
+  background: #e91e63; /* Rosa */
 }
 
 .icon-circle.conflicto {
-  background: #00bcd4; 
+  background: #00bcd4; /* Turquesa */
 }
 
 .col-desc {
@@ -427,7 +430,7 @@
 }
 
 
-/* RESPONSPONSIVO DEL APARTADO DE LAS METRICAS */
+/* RESPONSIVO */
 
 /* Laptops */
 @media (max-width: 1280px) {
@@ -526,7 +529,7 @@
 
   /* Separar texto del círculo */
   .metric-text {
-    margin-top: 100px; 
+    margin-top: 100px; /* Ajusta este valor a tu gusto */
   }
 
   .metric-text strong {
@@ -554,7 +557,7 @@
   }
 }
 
-/*Extra pequeños*/
+/* 🔹 Extra pequeños (≤360px) */
 @media (max-width: 360px) {
   .dashboard-metricas {
     gap: 10px;
@@ -568,7 +571,7 @@
     font-size: 14px;
   }
 }
-  /* Responsivo de los circulos */
+  /* Responsivo */
 @media (max-width: 768px) {
   .circle-wrapper {
     width: 100px;
@@ -598,7 +601,14 @@
     font-size: 8px;
   }
 }
-/* MODO OSCURO */
+
+
+
+
+
+
+
+/* 🌙 MODO OSCURO */
 body.dark-mode .dashboard-container {
   background: #1e1e1e;
   color: #ddd;
@@ -630,15 +640,17 @@ body.dark-mode .col-desc {
 }
 
 /*Fondo y letras de la parte de metricas*/
+/* Títulos principales */
 body.dark-mode .dashboard-titulo {
   color: #eee;
 }
 
-/* Subtítulo de métricas*/
+/* Subtítulo de métricas ("Métricas clave") */
 body.dark-mode .dashboard-subtitle {
   color: #ccc;
 }
 
+/* Subtítulos pequeños (los de acciones requeridas) */
 body.dark-mode .dashboard-subtitulo {
   color: #f7f2f2;
 }
@@ -692,6 +704,8 @@ body.dark-mode .dashboard-dia.hoy {
   background: #3498db;
   color: #fff;
 }
+
+
 
 /* Encabezados */
 body.dark-mode .dashboard-encabezados {
