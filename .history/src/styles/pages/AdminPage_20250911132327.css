@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* permite que baje en pantallas pequeñas */
   border-bottom: 1px solid #d3e0eb; 
 }
 

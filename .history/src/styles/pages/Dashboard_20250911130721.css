@@ -35,7 +35,7 @@
 .dashboard-container {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #e9f0f6;
+  background: #0c1924;
   color: #333;
   max-width: 1400px; 
   margin: 0 auto;
@@ -47,6 +47,11 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #a3a2a2;
+}
+.dashboard-encabezado {
+  background: #e9f0f6;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /*PANEL GENERAL*/

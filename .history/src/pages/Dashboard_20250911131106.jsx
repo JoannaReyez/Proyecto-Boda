@@ -70,6 +70,7 @@ export default function Dashboard() {
 
   return (
     <div className="dashboard-container">
+      <div className="dashboard-header-block"></div>
       <h1 className="dashboard-titulo">Resumen general del evento</h1>
 
       {/* Métricas + calendario */}

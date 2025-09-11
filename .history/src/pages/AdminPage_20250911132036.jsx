@@ -99,13 +99,17 @@ export default function AdminPage() {
           </div>
 
           {/* Menú despegable central */}
-          <div className="topbar-select-center">
-            <select>
-              <option>Graduación de Lic. Derecho 2020 - 2024</option>
-              <option>Graduación de Ing. Sistemas 2021 - 2025</option>
-              <option>Otro evento</option>
-            </select>
-          </div>
+          <div class="custom-dropdown">
+  <button class="dropdown-btn">
+    Graduación de Lic. Derecho 2020 - 2024
+  </button>
+  <div class="dropdown-content">
+    <a href="#">Graduación de Lic. Derecho 2020 - 2024</a>
+    <a href="#">Graduación de Ing. Sistemas 2021 - 2025</a>
+    <a href="#">Otro evento</a>
+  </div>
+</div>
+
 
           {/* Derecha */}
           <div className="topbar-icons">

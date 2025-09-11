@@ -40,6 +40,7 @@
   max-width: 1400px; 
   margin: 0 auto;
 }
+/* Ajustar la franja del título para que tome el mismo azul */
 .dashboard-titulo {
   text-align: center;
   z-index: 10;  
@@ -47,8 +48,12 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #a3a2a2;
-}
 
+  /* NUEVO */
+  background: #e9f0f6; /* mismo color que el fondo general */
+  padding: 10px 0;      /* relleno vertical para que se vea como barra */
+  border-radius: 8px;   /* opcional, para que no quede cuadrado duro */
+}
 /*PANEL GENERAL*/
 .dashboard-panel {
   display: grid;

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+<Outlet context={{ darkMode }} />
 import {
   CircularProgressbar,
   buildStyles

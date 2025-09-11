@@ -103,8 +103,8 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #d3e0eb; 
+  flex-wrap: wrap; /* 🔹 permite que baje en pantallas pequeñas */
+  border-bottom: 1px solid #d3e0eb; /* opcional, línea separadora */
 }
 
 .topbar-text {
@@ -124,34 +124,42 @@
   color: #666;
 }
 
+/* Select centrado */
 .topbar-select-center {
   flex: 1;
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .topbar-select-center select {
-  appearance: none;
+  appearance: none; /* Quita el estilo nativo del select */
   -webkit-appearance: none;
   -moz-appearance: none;
-
-  padding: 6px 35px 6px 15px; 
-  border-radius: 20px; 
-  border: 1px solid #c5d0d9;
-  background-color: #f0f4f7; 
+  
+  padding: 6px 35px 6px 12px; /* espacio para la flecha */
+  border-radius: 20px;
+  border: none;
+  background-color: #e9f0f5; /* gris azulado como en la imagen */
   font-size: 13px;
   font-weight: 500;
-  color: #6a7a89; 
+  color: #6c757d; /* texto gris */
   cursor: pointer;
-  outline: none;
+  
+  /* sombra ligera */
+  box-shadow: inset 0 0 0 1px #c0c9d1;
 }
+
+/* Agregamos la flechita personalizada */
+.topbar-select-center {
+  position: relative;
+}
+
 .topbar-select-center::after {
-  content: "▾";
-  font-size: 30px;
-  color: #6a7a89;
+  content: "▼";
+  font-size: 12px;
+  color: #6c757d;
   position: absolute;
-  right: 70px;
+  right: 15px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
@@ -323,7 +331,7 @@
   }
   .tooltip-pill {
     left: auto;
-    top: 50px;
+    top: 50px; /* 🔹 tooltips bajan en mobile */
     transform: translateY(-10px);
   }
   .topbar {

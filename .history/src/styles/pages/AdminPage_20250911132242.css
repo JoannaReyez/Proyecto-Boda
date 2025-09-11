@@ -103,8 +103,8 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #d3e0eb; 
+  flex-wrap: wrap; /* 🔹 permite que baje en pantallas pequeñas */
+  border-bottom: 1px solid #d3e0eb; /* opcional, línea separadora */
 }
 
 .topbar-text {
@@ -124,6 +124,7 @@
   color: #666;
 }
 
+/* Select centrado */
 .topbar-select-center {
   flex: 1;
   display: flex;
@@ -136,13 +137,13 @@
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  padding: 6px 35px 6px 15px; 
-  border-radius: 20px; 
-  border: 1px solid #c5d0d9;
-  background-color: #f0f4f7; 
+  padding: 6px 35px 6px 15px; /* espacio para la flecha */
+  border-radius: 20px; /* esquinas redondeadas */
+  border: 1px solid #c5d0d9; /* borde gris tenue */
+  background-color: #f0f4f7; /* fondo gris claro */
   font-size: 13px;
   font-weight: 500;
-  color: #6a7a89; 
+  color: #6a7a89; /* texto gris medio */
   cursor: pointer;
   outline: none;
 }
@@ -323,7 +324,7 @@
   }
   .tooltip-pill {
     left: auto;
-    top: 50px;
+    top: 50px; /* 🔹 tooltips bajan en mobile */
     transform: translateY(-10px);
   }
   .topbar {

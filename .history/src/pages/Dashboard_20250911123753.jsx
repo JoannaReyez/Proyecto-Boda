@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { useOutletContext } from "react-router-dom";
+<Outlet context={{ darkMode }} />
 import {
   CircularProgressbar,
   buildStyles
@@ -8,6 +9,7 @@ import "react-circular-progressbar/dist/styles.css";
 import "../styles/pages/Dashboard.css";
 
 export default function Dashboard() {
+  const { darkMode } = useOutletContext();
   const hoy = new Date();
   const [mes, setMes] = useState(hoy.getMonth());
   const [anio, setAnio] = useState(hoy.getFullYear());

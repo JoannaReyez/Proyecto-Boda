@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { useOutletContext } from "react-router-dom";
 import {
   CircularProgressbar,
   buildStyles
@@ -8,6 +8,9 @@ import "react-circular-progressbar/dist/styles.css";
 import "../styles/pages/Dashboard.css";
 
 export default function Dashboard() {
+  // Recibe el estado darkMode desde AdminPage
+  const { darkMode } = useOutletContext();
+
   const hoy = new Date();
   const [mes, setMes] = useState(hoy.getMonth());
   const [anio, setAnio] = useState(hoy.getFullYear());
@@ -36,7 +39,7 @@ export default function Dashboard() {
   };
 
   const Metrica = ({ valor, titulo, subtitulo, gradienteId, color1, color2 }) => (
-    <div className="dashboard-metrica">
+    <div className={`dashboard-metrica ${darkMode ? "dark-mode" : ""}`}>
       <h3>{titulo}</h3>
       <div className="metric-circle">
         <div className="circle-wrapper">
@@ -45,7 +48,7 @@ export default function Dashboard() {
             strokeWidth={9}
             styles={buildStyles({
               pathColor: `url(#${gradienteId})`,
-              trailColor: "#e6e9f0",
+              trailColor: darkMode ? "#444" : "#e6e9f0",
               strokeLinecap: "round",
             })}
           />
@@ -69,7 +72,7 @@ export default function Dashboard() {
   );
 
   return (
-    <div className="dashboard-container">
+    <div className={`dashboard-container ${darkMode ? "dark-mode" : ""}`}>
       <h1 className="dashboard-titulo">Resumen general del evento</h1>
 
       {/* Métricas + calendario */}
@@ -107,7 +110,7 @@ export default function Dashboard() {
         {/* CALENDARIO */}
         <div className="dashboard-panel-right">
           <div className="dashboard-calendario-wrapper">
-            <div className="dashboard-calendario">
+            <div className={`dashboard-calendario ${darkMode ? "dark-mode" : ""}`}>
               <div className="dashboard-calendario-header">
                 <h2>{meses[mes]} {anio}</h2>
                 <div>
@@ -144,7 +147,7 @@ export default function Dashboard() {
       </div>
 
       {/* Acciones requeridas */}
-      <div className="dashboard-acciones">
+      <div className={`dashboard-acciones ${darkMode ? "dark-mode" : ""}`}>
         <div className="acciones-header">
           <div>
             <h2>Acciones requeridas</h2>
@@ -152,7 +155,11 @@ export default function Dashboard() {
               Una lista de tareas urgentes para que el admin actúe
             </p>
           </div>
-          <input type="text" placeholder="Buscar" className="acciones-buscar" />
+          <input
+            type="text"
+            placeholder="Buscar"
+            className={`acciones-buscar ${darkMode ? "dark-mode" : ""}`}
+          />
         </div>
 
         <div className="dashboard-tabla">

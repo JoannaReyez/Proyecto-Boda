@@ -48,6 +48,11 @@
   margin-bottom: 10px;
   color: #a3a2a2;
 }
+.dashboard-encabezado {
+  background: #e9f0f6;
+  padding: 15px;
+  border-radius: 10px;
+}
 
 /*PANEL GENERAL*/
 .dashboard-panel {

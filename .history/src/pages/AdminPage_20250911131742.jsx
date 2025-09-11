@@ -99,7 +99,12 @@ export default function AdminPage() {
           </div>
 
           {/* Menú despegable central */}
-          <div className="topbar-select-center">
+          <div className=".topbar-select-center select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}">
             <select>
               <option>Graduación de Lic. Derecho 2020 - 2024</option>
               <option>Graduación de Ing. Sistemas 2021 - 2025</option>

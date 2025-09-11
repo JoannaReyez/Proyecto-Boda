@@ -1,4 +1,6 @@
-/*CÍRCULO Y NÚMEROS*/
+/* ======================= */
+/* 🔹 CÍRCULO Y NÚMEROS    */
+/* ======================= */
 .metric-circle {
   position: relative;
   display: inline-flex;
@@ -6,12 +8,15 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Contenedor del círculo (CircularProgressbar) */
 .circle-wrapper {
   position: relative;
   width: 120px; 
   height: 120px;
 }
 
+/* Texto que va dentro del círculo (número y subtexto) */
 .circle-text {
   position: absolute;
   top: 35%;
@@ -19,42 +24,51 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+/* Número grande dentro del círculo (ej. 75%) */
 .circle-value {
   font-size: 22px;
   font-weight: bold;
   color: #000;
-  margin-top: 35px;
 }
+
+/* Texto pequeño debajo del número (ej. "de 100%") */
 .circle-sub {
   font-size: 10px;
   color: gray;
   margin-top: 2px;
 }
 
-/*BASE DEL DASHBOARD*/
+/* ======================= */
+/* 🔹 BASE DEL DASHBOARD   */
+/* ======================= */
 .dashboard-container {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background: #e9f0f6;
+  background: #f5f9fc;
   color: #333;
   max-width: 1400px; 
   margin: 0 auto;
 }
+
+/* Título principal */
 .dashboard-titulo {
-  text-align: center;
-  z-index: 10;  
-  font-size: 15px;
+  position: relative;
+  z-index: 10;      
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #a3a2a2;
+  color: #333;
 }
 
-/*PANEL GENERAL*/
+/* ======================= */
+/* 🔹 PANEL GENERAL        */
+/* ======================= */
 .dashboard-panel {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 20px;
-  background: #ffffff;
+  background: white;
   border-radius: 14px;
   padding: 20px;
   box-shadow: 0 2px 6px #00000014;
@@ -66,12 +80,17 @@
   display: flex;
   flex-direction: column;
 }
-/*CALENDARIO*/
+
+/* ======================= */
+/* 🔹 CALENDARIO           */
+/* ======================= */
 .dashboard-panel-right {
   display: flex;
   flex: 1;  
-  align-items: stretch; 
+  align-items: stretch; /* Para que el calendario tenga el mismo alto */
 }
+
+/* Contenedor del calendario */
 .dashboard-calendario-wrapper {
   flex: 1;
   width: 90%;
@@ -90,6 +109,8 @@
   flex-direction: column;
   box-shadow: 0 2px 6px #00000014;
 }
+
+/* Encabezado del calendario (mes/año + botones) */
 .dashboard-calendario-header {
   display: flex;
   justify-content: space-between;
@@ -115,6 +136,8 @@
 .dashboard-calendario-header button:hover {
   color: #444;
 }
+
+/* Celdas del calendario (días de la semana + días del mes) */
 .dashboard-calendario-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -122,28 +145,38 @@
   flex: 1;
   text-align: center;
 }
+
+/* Días de la semana (Lun, Mar, Mié, etc.) */
 .dashboard-dia-semana {
   font-size: 11px;
   font-weight: bold;
   color: #666;
 }
+
+/* Días del calendario */
 .dashboard-dia {
   padding: 6px;
   border-radius: 6px;
   font-size: 11px;
   color: #333;
 }
+
+/* Día actual resaltado */
 .dashboard-dia.hoy {
   background: #3498db;
   color: #ffffff;
   font-weight: bold;
   border-radius: 50%;
 }
+
+/* Espacios vacíos del inicio del mes */
 .dashboard-vacio {
   visibility: hidden;
 }
 
-/*MÉTRICAS */
+/* ======================= */
+/* 🔹 MÉTRICAS             */
+/* ======================= */
 .dashboard-subtitle {
   font-size: 13px;
   margin-bottom: 10px;
@@ -161,7 +194,7 @@
 .dashboard-metrica {
   flex: 1;
   min-width: 120px; 
-  background: #f0efef;
+  background: #f5f9fc;
   border-radius: 12px;
   padding: 15px;
   text-align: center;

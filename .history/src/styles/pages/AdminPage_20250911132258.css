@@ -103,8 +103,8 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #d3e0eb; 
+  flex-wrap: wrap; /* 🔹 permite que baje en pantallas pequeñas */
+  border-bottom: 1px solid #d3e0eb; /* opcional, línea separadora */
 }
 
 .topbar-text {
@@ -124,6 +124,7 @@
   color: #666;
 }
 
+/* Select centrado */
 .topbar-select-center {
   flex: 1;
   display: flex;
@@ -323,7 +324,7 @@
   }
   .tooltip-pill {
     left: auto;
-    top: 50px;
+    top: 50px; /* 🔹 tooltips bajan en mobile */
     transform: translateY(-10px);
   }
   .topbar {

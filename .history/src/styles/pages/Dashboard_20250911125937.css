@@ -41,9 +41,9 @@
   margin: 0 auto;
 }
 .dashboard-titulo {
-  text-align: center;
+  position: relative;
   z-index: 10;  
-  font-size: 15px;
+  font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
   color: #a3a2a2;

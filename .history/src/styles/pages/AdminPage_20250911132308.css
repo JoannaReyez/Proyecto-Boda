@@ -103,7 +103,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ddd;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* 🔹 permite que baje en pantallas pequeñas */
   border-bottom: 1px solid #d3e0eb; 
 }
 
@@ -323,7 +323,7 @@
   }
   .tooltip-pill {
     left: auto;
-    top: 50px;
+    top: 50px; /* 🔹 tooltips bajan en mobile */
     transform: translateY(-10px);
   }
   .topbar {

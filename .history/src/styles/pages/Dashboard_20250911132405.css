@@ -30,6 +30,11 @@
   color: gray;
   margin-top: 2px;
 }
+.dashboard-header-block {
+  background: #e9f0f6;
+  padding: 20px;
+  border-radius: 10px;
+}
 
 /*BASE DEL DASHBOARD*/
 .dashboard-container {
@@ -37,8 +42,15 @@
   padding: 20px;
   background: #e9f0f6;
   color: #333;
-  max-width: 1400px; 
+  max-width: 1400px;
   margin: 0 auto;
+  margin-top: 0; 
+}
+.topbar-select-center select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
 }
 .dashboard-titulo {
   text-align: center;
@@ -47,6 +59,11 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: #a3a2a2;
+}
+.dashboard-encabezado {
+  background: #e9f0f6;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /*PANEL GENERAL*/

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   CircularProgressbar,
   buildStyles
@@ -79,7 +78,7 @@ export default function Dashboard() {
           <div className="dashboard-metricas">
             <Metrica
               valor={75}
-              titulo="% de pagos completados"
+              titulo=" de pagos completados"
               subtitulo="750 / 1000 asistentes"
               gradienteId="gradPagos"
               color1="#0d3b66"

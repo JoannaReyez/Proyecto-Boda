@@ -8,6 +8,7 @@ import "react-circular-progressbar/dist/styles.css";
 import "../styles/pages/Dashboard.css";
 
 export default function Dashboard() {
+  const { darkMode } = useOutletContext();
   const hoy = new Date();
   const [mes, setMes] = useState(hoy.getMonth());
   const [anio, setAnio] = useState(hoy.getFullYear());
