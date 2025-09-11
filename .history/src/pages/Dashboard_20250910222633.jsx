@@ -161,37 +161,20 @@ const Metrica = ({ valor, titulo, subtitulo, gradienteId, color1, color2 }) => (
       <div>Acción</div>
     </div>
 
-    <div className="dashboard-fila">
-      <div className="col-tipo">
-        <span className="icon-circle alerta">!</span>
-        Pago Pendiente
-      </div>
+    <div className="dashboard-fila alerta">
+      <div className="col-tipo"><span className="icon">⚠️</span> Pago Pendiente</div>
       <div className="col-desc">Hay 15 nuevos comprobantes para verificar</div>
-      <div className="col-accion">
-        <button className="dashboard-btn">Ir a Módulo de Pagos</button>
-      </div>
+      <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Pagos</button></div>
     </div>
-
-    <div className="dashboard-fila">
-      <div className="col-tipo">
-        <span className="icon-circle chat">!</span>
-        Chat
-      </div>
+    <div className="dashboard-fila chat">
+      <div className="col-tipo"><span className="icon">❗</span> Chat</div>
       <div className="col-desc">3 conversaciones requieren intervención humana</div>
-      <div className="col-accion">
-        <button className="dashboard-btn">Ir a Módulo de Comunicación</button>
-      </div>
+      <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Comunicación</button></div>
     </div>
-
-    <div className="dashboard-fila">
-      <div className="col-tipo">
-        <span className="icon-circle conflicto">!</span>
-        Conflicto de asignación
-      </div>
+    <div className="dashboard-fila conflicto">
+      <div className="col-tipo"><span className="icon">ℹ️</span> Conflicto de asignación</div>
       <div className="col-desc">Nuevo conflicto de asignación de asientos</div>
-      <div className="col-accion">
-        <button className="dashboard-btn">Ir a Módulo de Asignaciones</button>
-      </div>
+      <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Asignaciones</button></div>
     </div>
   </div>
 </div>

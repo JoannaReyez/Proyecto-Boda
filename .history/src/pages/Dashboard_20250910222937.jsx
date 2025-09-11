@@ -143,59 +143,41 @@ const Metrica = ({ valor, titulo, subtitulo, gradienteId, color1, color2 }) => (
       </div>
 
       {/* Acciones requeridas */}
-<div className="dashboard-acciones">
-  <div className="acciones-header">
-    <div>
-      <h2>Acciones requeridas</h2>
-      <p className="dashboard-subtitulo">
-        Una lista de tareas urgentes para que el admin actúe
-      </p>
-    </div>
-    <input type="text" placeholder="Buscar" className="acciones-buscar" />
-  </div>
+      <div className="dashboard-acciones">
+        <div className="acciones-header">
+          <div>
+            <h2>Acciones requeridas</h2>
+            <p className="dashboard-subtitulo">
+              Una lista de tareas urgentes para que el admin actúe
+            </p>
+          </div>
+          <input type="text" placeholder="Buscar" className="acciones-buscar" />
+        </div>
 
-  <div className="dashboard-tabla">
-    <div className="dashboard-encabezados">
-      <div>Tipo</div>
-      <div>Descripción</div>
-      <div>Acción</div>
-    </div>
+        <div className="dashboard-tabla">
+          <div className="dashboard-encabezados">
+            <div>Tipo</div>
+            <div>Descripción</div>
+            <div>Acción</div>
+          </div>
 
-    <div className="dashboard-fila">
-      <div className="col-tipo">
-        <span className="icon-circle alerta">!</span>
-        Pago Pendiente
+          <div className="dashboard-fila">
+            <div className="col-tipo"><span className="icon alerta">⚠</span> Pago Pendiente</div>
+            <div className="col-desc">Hay 15 nuevos comprobantes para verificar</div>
+            <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Pagos</button></div>
+          </div>
+          <div className="dashboard-fila">
+            <div className="col-tipo"><span className="icon chat">⚠</span> Chat</div>
+            <div className="col-desc">3 conversaciones requieren intervención humana</div>
+            <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Comunicación</button></div>
+          </div>
+          <div className="dashboard-fila">
+            <div className="col-tipo"><span className="icon conflicto">⚠</span> Conflicto de asignación</div>
+            <div className="col-desc">Nuevo conflicto de asignación de asientos</div>
+            <div className="col-accion"><button className="dashboard-btn">Ir a Módulo de Asignaciones</button></div>
+          </div>
+        </div>
       </div>
-      <div className="col-desc">Hay 15 nuevos comprobantes para verificar</div>
-      <div className="col-accion">
-        <button className="dashboard-btn">Ir a Módulo de Pagos</button>
-      </div>
-    </div>
-
-    <div className="dashboard-fila">
-      <div className="col-tipo">
-        <span className="icon-circle chat">!</span>
-        Chat
-      </div>
-      <div className="col-desc">3 conversaciones requieren intervención humana</div>
-      <div className="col-accion">
-        <button className="dashboard-btn">Ir a Módulo de Comunicación</button>
-      </div>
-    </div>
-
-    <div className="dashboard-fila">
-      <div className="col-tipo">
-        <span className="icon-circle conflicto">!</span>
-        Conflicto de asignación
-      </div>
-      <div className="col-desc">Nuevo conflicto de asignación de asientos</div>
-      <div className="col-accion">
-        <button className="dashboard-btn">Ir a Módulo de Asignaciones</button>
-      </div>
-    </div>
-  </div>
-</div>
-
     </div>
   );
 }

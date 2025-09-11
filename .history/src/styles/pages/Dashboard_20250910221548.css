@@ -237,33 +237,12 @@
 }
 
 /* ACCIONES */
-.dashboard-acciones {
-  background: white;
-  border-radius: 14px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.dashboard-acciones h2 {
-  font-size: 13px;
-  margin-bottom: 4px;
-  color: #444;
-  font-weight: 600;
-}
-
-.dashboard-subtitulo {
-  font-size: 11px;
-  color: #777;
-  margin-bottom: 15px;
-}
-
 .acciones-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 12px;
 }
-
 .acciones-buscar {
   border: 1px solid #ddd;
   border-radius: 6px;
@@ -286,6 +265,25 @@
   border-bottom: 1px solid #eee;
   margin-bottom: 4px;
 }
+.dashboard-acciones {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.dashboard-acciones h2 {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #444;
+  font-weight: 500;
+}
+
+.dashboard-subtitulo {
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 15px;
+}
 
 .dashboard-tabla {
   display: flex;
@@ -296,44 +294,32 @@
   display: grid;
   grid-template-columns: 1.5fr 3fr 1.5fr;
   align-items: center;
-  padding: 12px 10px;
-  border-radius: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
   font-size: 12px;
-  margin-bottom: 8px;
-  background: #f9fcff; /* blanco con un toque azul */
-  border: 1px solid #e1ecf9;
+}
+
+.dashboard-fila:last-child {
+  border-bottom: none;
 }
 
 .col-tipo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-weight: 500;
 }
 
-/* Iconos redondos */
-.icon-circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  font-size: 11px;
-  font-weight: bold;
-  color: white;
+.icon.alerta {
+  color: #f39c12;
 }
 
-.icon-circle.alerta {
-  background: #f4b400; /* Amarillo */
+.icon.chat {
+  color: #e91e63;
 }
 
-.icon-circle.chat {
-  background: #e91e63; /* Rosa */
-}
-
-.icon-circle.conflicto {
-  background: #00bcd4; /* Turquesa */
+.icon.conflicto {
+  color: #00bcd4;
 }
 
 .col-desc {
@@ -346,7 +332,7 @@
 }
 
 .dashboard-btn {
-  background: #eef6ff;
+  background: #e8f1fb;
   border: none;
   border-radius: 8px;
   padding: 6px 12px;
@@ -357,78 +343,8 @@
 }
 
 .dashboard-btn:hover {
-  background: #dbeaff;
+  background: #d6e6fa;
 }
-
-/* ------- RESPONSIVE ------- */
-@media (max-width: 768px) {
-  .dashboard-encabezados {
-    grid-template-columns: 1fr 1fr; /* Encabezados más simples */
-    font-size: 10px;
-    gap: 8px;
-  }
-
-  .dashboard-fila {
-    grid-template-columns: 1fr; /* Se apila en una sola columna */
-    text-align: left;
-    padding: 12px 0;
-  }
-
-  .col-accion {
-    text-align: left; /* Botón alineado a la izquierda */
-    margin-top: 6px;
-  }
-
-  .dashboard-btn {
-    width: 100%; /* Botón ocupa todo el ancho */
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .acciones-header {
-    flex-direction: column; /* Filtros y búsqueda uno debajo del otro */
-    align-items: stretch;
-    gap: 8px;
-  }
-
-  .acciones-buscar {
-    width: 100%;
-    font-size: 11px;
-    padding: 8px;
-  }
-
-  .dashboard-acciones {
-    padding: 12px;
-  }
-
-  .dashboard-encabezados {
-    display: none; /* Ocultar encabezados en pantallas muy pequeñas */
-  }
-
-  .dashboard-fila {
-    border: 1px solid #eee;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #fafafa;
-  }
-
-  .col-tipo {
-    font-size: 12px;
-    margin-bottom: 6px;
-  }
-
-  .col-desc {
-    font-size: 11px;
-    margin-bottom: 6px;
-  }
-
-  .col-accion {
-    margin-top: 6px;
-  }
-}
-
 
 /* RESPONSIVO */
 
@@ -641,26 +557,6 @@ body.dark-mode .col-desc {
   color: #aaa;
 }
 
-/*Fondo y letras de la parte de metricas*/
-/* Títulos principales */
-body.dark-mode .dashboard-titulo {
-  color: #eee;
-}
-
-/* Subtítulo de métricas ("Métricas clave") */
-body.dark-mode .dashboard-subtitle {
-  color: #ccc;
-}
-
-/* Subtítulos pequeños (los de acciones requeridas) */
-body.dark-mode .dashboard-subtitulo {
-  color: #f7f2f2;
-}
-body.dark-mode .dashboard-panel {
-  background: #2a2a2a;
-  color: #ddd;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
-}
 /* Métricas circulares */
 body.dark-mode .metric-text strong {
   color: #fff;
@@ -707,7 +603,11 @@ body.dark-mode .dashboard-dia.hoy {
   color: #fff;
 }
 
-
+body.dark-mode .dashboard-panel {
+  background: #2a2a2a;
+  color: #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
 
 /* Encabezados */
 body.dark-mode .dashboard-encabezados {
