@@ -29,6 +29,7 @@ export default function AppRoutes() {
         {/* Ruta Admin de la nueva MasterPage */}
         <Route path="/admin" element={<AdminPage />}>
           <Route index element={<Dashboard />} />
+          <Route path="tareas" element={<Resumen />} />
         </Route>
 
       </Routes>

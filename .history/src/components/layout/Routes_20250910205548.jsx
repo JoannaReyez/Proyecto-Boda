@@ -8,9 +8,9 @@ import Distribucion from "../../pages/Distribucion"
 
 
 /*Aqui van las rutas de Admin*/
-import AdminPage from "../../pages/AdminPage"
-import Dashboard from "../../pages/Dashboard" 
-
+import AdminPage from "./AdminPage"
+import Dashboard from "./Dashboard" 
+import
 
 
 export default function AppRoutes() {
@@ -29,6 +29,7 @@ export default function AppRoutes() {
         {/* Ruta Admin de la nueva MasterPage */}
         <Route path="/admin" element={<AdminPage />}>
           <Route index element={<Dashboard />} />
+          <Route path="tareas" element={<Resumen />} />
         </Route>
 
       </Routes>

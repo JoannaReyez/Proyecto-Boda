@@ -7,11 +7,6 @@ import Invitados from "../../pages/Invitados"
 import Distribucion from "../../pages/Distribucion"
 
 
-/*Aqui van las rutas de Admin*/
-import AdminPage from "../../pages/AdminPage"
-import Dashboard from "../../pages/Dashboard" 
-
-
 
 export default function AppRoutes() {
   return (
@@ -26,11 +21,6 @@ export default function AppRoutes() {
           <Route path="Invitados" element={<Invitados />} />
           <Route path="Distribucion" element={<Distribucion />} />
         </Route>
-        {/* Ruta Admin de la nueva MasterPage */}
-        <Route path="/admin" element={<AdminPage />}>
-          <Route index element={<Dashboard />} />
-        </Route>
-
       </Routes>
     </Router>
   )

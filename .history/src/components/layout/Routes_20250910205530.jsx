@@ -8,9 +8,8 @@ import Distribucion from "../../pages/Distribucion"
 
 
 /*Aqui van las rutas de Admin*/
-import AdminPage from "../../pages/AdminPage"
-import Dashboard from "../../pages/Dashboard" 
-
+import AdminPage from "./AdminPage"
+import Dashboard from "./Dashboard" 
 
 
 export default function AppRoutes() {
