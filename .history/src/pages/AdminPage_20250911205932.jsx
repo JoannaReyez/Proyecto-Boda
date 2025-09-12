@@ -57,7 +57,7 @@ export default function AdminPage() {
             </li>
 
             <li className="tooltip">
-              <NavLink to="/admin/finanzas">
+              <NavLink to="/admin/pagos">
                 <Coins size={22} />
               </NavLink>
               <span className="tooltip-pill">Módulo de pagos</span>

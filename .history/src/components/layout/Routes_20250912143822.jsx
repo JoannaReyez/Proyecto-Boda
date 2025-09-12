@@ -7,7 +7,7 @@ import Invitados from "../../pages/Invitados"
 import Distribucion from "../../pages/Distribucion"
 
 /* Aqui van las rutas de Admin */
-import AdminPage from "./AdminPage"
+import AdminPage from "../../layout/AdminPage"
 import Dashboard from "../../pages/Dashboard"
 import Pagos from "../../pages/Pagos"
 
@@ -25,7 +25,7 @@ export default function AppRoutes() {
           <Route path="Distribucion" element={<Distribucion />} />
         </Route>
 
-        {/* Ruta Admin con AdminPage*/}
+        {/* Ruta Admin con AdminPage en layout */}
         <Route path="/admin" element={<AdminPage />}>
           <Route index element={<Dashboard />} />
           <Route path="pagos" element={<Pagos />} />

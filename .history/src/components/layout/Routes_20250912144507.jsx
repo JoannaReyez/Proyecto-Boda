@@ -25,7 +25,7 @@ export default function AppRoutes() {
           <Route path="Distribucion" element={<Distribucion />} />
         </Route>
 
-        {/* Ruta Admin con AdminPage*/}
+        {/* Ruta Admin con AdminPage  */}
         <Route path="/admin" element={<AdminPage />}>
           <Route index element={<Dashboard />} />
           <Route path="pagos" element={<Pagos />} />
